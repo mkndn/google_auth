@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">계정 %d개 가져옴</item>
+        <item quantity="other">계정 %d개 가져옴</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">계정 %d개 내보냄</item>
+        <item quantity="other">계정 %d개 내보냄</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">계정 %d개 가져옴</item>
+        <item quantity="other">계정 %d개 가져옴</item>
+    </plurals>
+</resources>

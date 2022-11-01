@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">已导入 %d 个帐号</item>
+        <item quantity="other">已导入 %d 个帐号</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">导出了 %d 个帐号</item>
+        <item quantity="other">导出了 %d 个帐号</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">导入了 %d 个帐号</item>
+        <item quantity="other">导入了 %d 个帐号</item>
+    </plurals>
+</resources>

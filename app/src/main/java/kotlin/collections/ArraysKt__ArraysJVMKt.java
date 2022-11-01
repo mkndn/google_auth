@@ -1,0 +1,6 @@
+package kotlin.collections;
+
+/* compiled from: PG */
+/* loaded from: classes.dex */
+class ArraysKt__ArraysJVMKt {
+}

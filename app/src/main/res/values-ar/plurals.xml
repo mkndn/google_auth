@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="zero">تم استرداد%d حساب</item>
+        <item quantity="one">تم استيراد حساب واحد (%d)</item>
+        <item quantity="two">تم استيراد حسابين (%d)</item>
+        <item quantity="few">تم استيراد%d حسابات</item>
+        <item quantity="many">تم استيراد %d حسابًا</item>
+        <item quantity="other">تم استيراد %d حساب</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="zero">تم تصدير %d حساب.</item>
+        <item quantity="one">تم تصدير حساب واحد (%d).</item>
+        <item quantity="two">تم تصدير حسابَين (%d).</item>
+        <item quantity="few">تم تصدير %d حسابات.</item>
+        <item quantity="many">تم تصدير %d حسابًا.</item>
+        <item quantity="other">تم تصدير %d حساب.</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="zero">تم استيراد (%d) حساب.</item>
+        <item quantity="one">تم استيراد حساب واحد (%d).</item>
+        <item quantity="two">تم استيراد حسابَين (%d).</item>
+        <item quantity="few">تم استيراد (%d) حسابات.</item>
+        <item quantity="many">تم استيراد (%d) حسابًا.</item>
+        <item quantity="other">تم استيراد (%d) حساب.</item>
+    </plurals>
+</resources>

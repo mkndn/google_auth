@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">Đã nhập %d tài khoản</item>
+        <item quantity="other">Đã nhập %d tài khoản</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">%d tài khoản đã được xuất</item>
+        <item quantity="other">%d tài khoản đã được xuất</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">%d tài khoản đã được nhập</item>
+        <item quantity="other">%d tài khoản đã được nhập</item>
+    </plurals>
+</resources>

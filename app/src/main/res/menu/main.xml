@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/normal_grp">
+        <item android:icon="@android:drawable/ic_menu_help" android:id="@+id/how_it_works" android:title="@string/how_it_works_menu_item"/>
+        <item android:id="@+id/switch_ui_mode" android:title="@string/switch_ui_mode_dark"/>
+        <item android:id="@+id/migration" android:title="@string/migration_menu_item"/>
+        <item android:icon="@android:drawable/ic_menu_preferences" android:id="@+id/settings" android:title="@string/settings_menu_item"/>
+        <item android:id="@+id/help_and_feedback" android:title="@string/help_and_feedback_menu_item"/>
+    </group>
+</menu>

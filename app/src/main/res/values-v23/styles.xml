@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AuthenticatorTheme" parent="@style/Theme.GoogleMaterial.Light">
+        <item name="android:navigationBarColor">@color/navigationBarColorLight</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:navigationBarDividerColor">@color/google_grey300</item>
+        <item name="accountListWithFirstAccountDetail">@style/AccountListWithFirstAccountDetail</item>
+        <item name="accountListWithFirstAccountHeader">@style/AccountListWithFirstAccountHeader</item>
+        <item name="accountListWithRecentMigrationButterbar">@style/AccountListWithRecentMigrationButterbar</item>
+        <item name="accountListWithVerificationCodes">@style/AccountListWithVerificationCodes</item>
+        <item name="accountListWithVerificationCodesRow">@style/AccountListWithVerificationCodesRow</item>
+        <item name="accountListWithVerificationCodesRowAccountName">@style/AccountListWithVerificationCodesRowAccountName</item>
+        <item name="accountListWithVerificationCodesRowCountdownIndicator">@style/AccountListWithVerificationCodesRowCountdownIndicator</item>
+        <item name="accountListWithVerificationCodesRowRefreshButton">@style/AccountListWithVerificationCodesRowRefreshButton</item>
+        <item name="accountListWithVerificationCodesRowVerificationCode">@style/AccountListWithVerificationCodesRowVerificationCode</item>
+        <item name="actionModeStyle">@style/AuthenticatorActionMode</item>
+        <item name="addAccountScrim">@style/AddAccountScrim</item>
+        <item name="bottomBarOption">@style/BottomBarOption</item>
+        <item name="contextMenuCopyIcon">@drawable/quantum_ic_content_copy_grey600_24</item>
+        <item name="contextMenuDeleteIcon">@drawable/quantum_ic_delete_grey600_24</item>
+        <item name="contextMenuRenameIcon">@drawable/quantum_ic_edit_grey600_24</item>
+        <item name="fabButtonAddAccount">@style/FabButtonAddAccount</item>
+        <item name="firstAccountMessageDoneButtonStyle">@style/FirstAccountMessageDoneButtonStyle</item>
+        <item name="pinCodeListBackground">@style/PinCodeListBackground</item>
+        <item name="userRowDraggedItemShadowBottom">@style/UserRowDraggedItemShadowBottom</item>
+        <item name="userRowDraggedItemShadowTop">@style/UserRowDraggedItemShadowTop</item>
+        <item name="userRowListDividerColor">@color/userRowDividerColor</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="AuthenticatorTheme.Dark" parent="@style/Theme.GoogleMaterial.Dark">
+        <item name="android:navigationBarColor">@color/google_black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        <item name="android:navigationBarDividerColor">@color/google_black</item>
+        <item name="accountListWithFirstAccountDetail">@style/AccountListWithFirstAccountDetail.Dark</item>
+        <item name="accountListWithFirstAccountHeader">@style/AccountListWithFirstAccountHeader.Dark</item>
+        <item name="accountListWithRecentMigrationButterbar">@style/AccountListWithRecentMigrationButterbar</item>
+        <item name="accountListWithVerificationCodes">@style/AccountListWithVerificationCodes.Dark</item>
+        <item name="accountListWithVerificationCodesRow">@style/AccountListWithVerificationCodesRow.Dark</item>
+        <item name="accountListWithVerificationCodesRowAccountName">@style/AccountListWithVerificationCodesRowAccountName.Dark</item>
+        <item name="accountListWithVerificationCodesRowCountdownIndicator">@style/AccountListWithVerificationCodesRowCountdownIndicator.Dark</item>
+        <item name="accountListWithVerificationCodesRowRefreshButton">@style/AccountListWithVerificationCodesRowRefreshButton.Dark</item>
+        <item name="accountListWithVerificationCodesRowVerificationCode">@style/AccountListWithVerificationCodesRowVerificationCode.Dark</item>
+        <item name="actionModeStyle">@style/AuthenticatorActionMode.Dark</item>
+        <item name="addAccountScrim">@style/AddAccountScrim.Dark</item>
+        <item name="bottomBarOption">@style/BottomBarOption.Dark</item>
+        <item name="contextMenuCopyIcon">@drawable/quantum_ic_content_copy_white_24</item>
+        <item name="contextMenuDeleteIcon">@drawable/quantum_ic_delete_white_24</item>
+        <item name="contextMenuRenameIcon">@drawable/quantum_ic_edit_white_24</item>
+        <item name="firstAccountMessageDoneButtonStyle">@style/FirstAccountMessageDoneButtonStyle.Dark</item>
+        <item name="pinCodeListBackground">@style/PinCodeListBackground.Dark</item>
+        <item name="userRowDraggedItemShadowBottom">@style/UserRowDraggedItemShadowBottom.Dark</item>
+        <item name="userRowDraggedItemShadowTop">@style/UserRowDraggedItemShadowTop.Dark</item>
+        <item name="userRowListDividerColor">@color/userRowDividerColorDark</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Menu">
+    </style>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V23.Theme.AppCompat">
+    </style>
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V23.Theme.AppCompat.Light">
+    </style>
+    <style name="Base.Theme.GoogleMaterial.Light" parent="@style/Base.V23.Theme.GoogleMaterial.Light">
+    </style>
+    <style name="Base.V23.Theme.AppCompat" parent="@style/Base.V22.Theme.AppCompat">
+        <item name="actionBarItemBackground">?android:attr/actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:attr/actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:attr/actionMenuTextColor</item>
+        <item name="actionOverflowButtonStyle">?android:attr/actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:attr/ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:attr/ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.V23.Theme.AppCompat.Light" parent="@style/Base.V22.Theme.AppCompat.Light">
+        <item name="actionBarItemBackground">?android:attr/actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:attr/actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:attr/actionMenuTextColor</item>
+        <item name="actionOverflowButtonStyle">?android:attr/actionOverflowButtonStyle</item>
+        <item name="controlBackground">@drawable/abc_control_background_material</item>
+        <item name="ratingBarStyleIndicator">?android:attr/ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:attr/ratingBarStyleSmall</item>
+    </style>
+    <style name="Base.V23.Theme.GoogleMaterial.Light" parent="@style/Base.V21.Theme.GoogleMaterial.Light">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ActionButton.Overflow" parent="@android:style/Widget.Material.ActionButton.Overflow">
+    </style>
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Material.Button.Borderless.Colored">
+    </style>
+    <style name="Base.Widget.AppCompat.Button.Colored" parent="@android:style/Widget.Material.Button.Colored">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.Button.Colored</item>
+    </style>
+    <style name="Base.Widget.AppCompat.EditText" parent="@android:style/Widget.Material.EditText">
+        <item name="android:breakStrategy">simple</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="Base.Widget.AppCompat.RatingBar.Indicator" parent="@android:style/Widget.Material.RatingBar.Indicator">
+    </style>
+    <style name="Base.Widget.AppCompat.RatingBar.Small" parent="@android:style/Widget.Material.RatingBar.Small">
+    </style>
+    <style name="Base.Widget.AppCompat.TextView" parent="@android:style/Widget.Material.TextView">
+        <item name="android:breakStrategy">high_quality</item>
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+    <style name="CardView" parent="@style/Base.CardView">
+        <item name="cardBackgroundColor">?android:attr/colorBackgroundFloating</item>
+    </style>
+    <style name="ThemeOverlay.GoogleMaterial.TextInputEditText" parent="@style/Base.ThemeOverlay.GoogleMaterial.TextInputEditText">
+        <item name="colorControlNormal">@color/google_textfield_indicator_text_color</item>
+    </style>
+    <style name="WelcomeFlowBody" parent="@style/TextAppearance.GoogleMaterial.Body1">
+        <item name="android:textColor">@color/google_grey900</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:breakStrategy">balanced</item>
+    </style>
+    <style name="WelcomeFlowHeadline" parent="@style/TextAppearance.GoogleMaterial.Headline2">
+        <item name="android:textColor">@color/google_grey900</item>
+        <item name="android:gravity">0x11</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:breakStrategy">balanced</item>
+    </style>
+    <style name="Widget.GoogleMaterial.ActionBar.Solid" parent="@style/Base.Widget.GoogleMaterial.ActionBar.Solid">
+        <item name="background">@drawable/google_appbar_surface_background_dark</item>
+        <item name="backgroundSplit">@drawable/google_appbar_surface_background_dark</item>
+        <item name="backgroundStacked">@drawable/google_appbar_surface_background_dark</item>
+    </style>
+    <style name="Widget.GoogleMaterial.CompoundButton.CheckBox" parent="@style/Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/google_checkbox_ripple</item>
+        <item name="buttonTint">@color/google_selection_control_button_tint</item>
+        <item name="useMaterialThemeColors">false</item>
+    </style>
+    <style name="Widget.GoogleMaterial.CompoundButton.RadioButton" parent="@style/Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:background">@drawable/google_radiobutton_ripple</item>
+        <item name="buttonTint">@color/google_selection_control_button_tint</item>
+        <item name="useMaterialThemeColors">false</item>
+    </style>
+    <style name="Widget.MaterialComponents.PopupMenu.ContextMenu" parent="@style/Base.Widget.MaterialComponents.PopupMenu.ContextMenu">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+        <item name="android:popupElevation">8dp</item>
+    </style>
+    <style name="Widget.MaterialComponents.PopupMenu.ListPopupWindow" parent="@style/Base.Widget.MaterialComponents.PopupMenu.ListPopupWindow">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+        <item name="android:popupElevation">8dp</item>
+    </style>
+</resources>

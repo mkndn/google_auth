@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d налог је увезен</item>
+        <item quantity="few">%d налога су увезена</item>
+        <item quantity="other">%d налога је увезено</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Извезен је %d налог</item>
+        <item quantity="few">Извезена су %d налога</item>
+        <item quantity="other">Извезено је %d налога</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Увезен је %d налог</item>
+        <item quantity="few">Увезена су %d налога</item>
+        <item quantity="other">Увезено је %d налога</item>
+    </plurals>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d cuenta importada</item>
+        <item quantity="other">%d cuentas importadas</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Se exportó la cuenta %d</item>
+        <item quantity="other">Se exportaron las cuentas %d</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Se importó la cuenta %d</item>
+        <item quantity="other">Se importaron las cuentas %d</item>
+    </plurals>
+</resources>

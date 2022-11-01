@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d akaun diimport</item>
+        <item quantity="other">%d akaun diimport</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Telah mengeksport %d akaun</item>
+        <item quantity="other">Telah mengeksport %d akaun</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Telah mengimport %d akaun</item>
+        <item quantity="other">Telah mengimport %d akaun</item>
+    </plurals>
+</resources>

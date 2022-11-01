@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d rekening is ingevoer</item>
+        <item quantity="other">%d rekeninge is ingevoer</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Het %d rekening uitgevoer</item>
+        <item quantity="other">Het %d rekeninge uitgevoer</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Het %d rekening ingevoer</item>
+        <item quantity="other">Het %d rekeninge ingevoer</item>
+    </plurals>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">Akaunti %d imepakiwa</item>
+        <item quantity="other">Akaunti %d zimepakiwa</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Akaunti %d ilihamishwa</item>
+        <item quantity="other">Akaunti %d zilihamishwa</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Akaunti %d ilipakiwa</item>
+        <item quantity="other">Akaunti %d zilipakiwa</item>
+    </plurals>
+</resources>

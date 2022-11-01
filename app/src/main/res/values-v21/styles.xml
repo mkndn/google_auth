@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AccountListWithRecentMigrationButterbar">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:backgroundTint">@color/google_blue600</item>
+    </style>
+    <style name="AuthenticatorTheme" parent="@style/Theme.GoogleMaterial.Light">
+        <item name="android:navigationBarColor">@color/navigationBarColorLight</item>
+        <item name="accountListWithFirstAccountDetail">@style/AccountListWithFirstAccountDetail</item>
+        <item name="accountListWithFirstAccountHeader">@style/AccountListWithFirstAccountHeader</item>
+        <item name="accountListWithRecentMigrationButterbar">@style/AccountListWithRecentMigrationButterbar</item>
+        <item name="accountListWithVerificationCodes">@style/AccountListWithVerificationCodes</item>
+        <item name="accountListWithVerificationCodesRow">@style/AccountListWithVerificationCodesRow</item>
+        <item name="accountListWithVerificationCodesRowAccountName">@style/AccountListWithVerificationCodesRowAccountName</item>
+        <item name="accountListWithVerificationCodesRowCountdownIndicator">@style/AccountListWithVerificationCodesRowCountdownIndicator</item>
+        <item name="accountListWithVerificationCodesRowRefreshButton">@style/AccountListWithVerificationCodesRowRefreshButton</item>
+        <item name="accountListWithVerificationCodesRowVerificationCode">@style/AccountListWithVerificationCodesRowVerificationCode</item>
+        <item name="actionModeStyle">@style/AuthenticatorActionMode</item>
+        <item name="addAccountScrim">@style/AddAccountScrim</item>
+        <item name="bottomBarOption">@style/BottomBarOption</item>
+        <item name="contextMenuCopyIcon">@drawable/quantum_ic_content_copy_grey600_24</item>
+        <item name="contextMenuDeleteIcon">@drawable/quantum_ic_delete_grey600_24</item>
+        <item name="contextMenuRenameIcon">@drawable/quantum_ic_edit_grey600_24</item>
+        <item name="fabButtonAddAccount">@style/FabButtonAddAccount</item>
+        <item name="firstAccountMessageDoneButtonStyle">@style/FirstAccountMessageDoneButtonStyle</item>
+        <item name="pinCodeListBackground">@style/PinCodeListBackground</item>
+        <item name="userRowDraggedItemShadowBottom">@style/UserRowDraggedItemShadowBottom</item>
+        <item name="userRowDraggedItemShadowTop">@style/UserRowDraggedItemShadowTop</item>
+        <item name="userRowListDividerColor">@color/userRowDividerColor</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="AuthenticatorTheme.Dark" parent="@style/Theme.GoogleMaterial.Dark">
+        <item name="android:navigationBarColor">@color/google_black</item>
+        <item name="accountListWithFirstAccountDetail">@style/AccountListWithFirstAccountDetail.Dark</item>
+        <item name="accountListWithFirstAccountHeader">@style/AccountListWithFirstAccountHeader.Dark</item>
+        <item name="accountListWithRecentMigrationButterbar">@style/AccountListWithRecentMigrationButterbar</item>
+        <item name="accountListWithVerificationCodes">@style/AccountListWithVerificationCodes.Dark</item>
+        <item name="accountListWithVerificationCodesRow">@style/AccountListWithVerificationCodesRow.Dark</item>
+        <item name="accountListWithVerificationCodesRowAccountName">@style/AccountListWithVerificationCodesRowAccountName.Dark</item>
+        <item name="accountListWithVerificationCodesRowCountdownIndicator">@style/AccountListWithVerificationCodesRowCountdownIndicator.Dark</item>
+        <item name="accountListWithVerificationCodesRowRefreshButton">@style/AccountListWithVerificationCodesRowRefreshButton.Dark</item>
+        <item name="accountListWithVerificationCodesRowVerificationCode">@style/AccountListWithVerificationCodesRowVerificationCode.Dark</item>
+        <item name="actionModeStyle">@style/AuthenticatorActionMode.Dark</item>
+        <item name="addAccountScrim">@style/AddAccountScrim.Dark</item>
+        <item name="bottomBarOption">@style/BottomBarOption.Dark</item>
+        <item name="contextMenuCopyIcon">@drawable/quantum_ic_content_copy_white_24</item>
+        <item name="contextMenuDeleteIcon">@drawable/quantum_ic_delete_white_24</item>
+        <item name="contextMenuRenameIcon">@drawable/quantum_ic_edit_white_24</item>
+        <item name="firstAccountMessageDoneButtonStyle">@style/FirstAccountMessageDoneButtonStyle.Dark</item>
+        <item name="pinCodeListBackground">@style/PinCodeListBackground.Dark</item>
+        <item name="userRowDraggedItemShadowBottom">@style/UserRowDraggedItemShadowBottom.Dark</item>
+        <item name="userRowDraggedItemShadowTop">@style/UserRowDraggedItemShadowTop.Dark</item>
+        <item name="userRowListDividerColor">@color/userRowDividerColorDark</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+    <style name="Base.TextAppearance.AppCompat" parent="@android:style/TextAppearance.Material">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Body1" parent="@android:style/TextAppearance.Material.Body1">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Body2" parent="@android:style/TextAppearance.Material.Body2">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Button" parent="@android:style/TextAppearance.Material.Button">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Caption" parent="@android:style/TextAppearance.Material.Caption">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Display1" parent="@android:style/TextAppearance.Material.Display1">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Display2" parent="@android:style/TextAppearance.Material.Display2">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Display3" parent="@android:style/TextAppearance.Material.Display3">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Display4" parent="@android:style/TextAppearance.Material.Display4">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Headline" parent="@android:style/TextAppearance.Material.Headline">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Inverse" parent="@android:style/TextAppearance.Material.Inverse">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Large" parent="@android:style/TextAppearance.Material.Large">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Large.Inverse" parent="@android:style/TextAppearance.Material.Large.Inverse">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Medium" parent="@android:style/TextAppearance.Material.Medium">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Medium.Inverse" parent="@android:style/TextAppearance.Material.Medium.Inverse">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Menu" parent="@android:style/TextAppearance.Material.Menu">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.SearchResult.Subtitle" parent="@android:style/TextAppearance.Material.SearchResult.Subtitle">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.SearchResult.Title" parent="@android:style/TextAppearance.Material.SearchResult.Title">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Small" parent="@android:style/TextAppearance.Material.Small">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Small.Inverse" parent="@android:style/TextAppearance.Material.Small.Inverse">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Subhead" parent="@android:style/TextAppearance.Material.Subhead">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Title" parent="@android:style/TextAppearance.Material.Title">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Subtitle">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="@android:style/TextAppearance.Material.Widget.ActionMode.Subtitle">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.ActionMode.Title" parent="@android:style/TextAppearance.Material.Widget.ActionMode.Title">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.Button" parent="@android:style/TextAppearance.Material.Widget.Button">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Header" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/abc_text_size_menu_header_material</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Material.Widget.PopupMenu.Large">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="@android:style/TextAppearance.Material.Widget.PopupMenu.Small">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.Switch" parent="@android:style/TextAppearance.Material.Button">
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Widget.TextView.SpinnerItem" parent="@android:style/TextAppearance.Material.Widget.TextView.SpinnerItem">
+    </style>
+    <style name="Base.TextAppearance.GoogleMaterial.Button" parent="@style/TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.0179</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Base.TextAppearance.GoogleMaterial.Overline" parent="@style/TextAppearance.MaterialComponents.Overline">
+        <item name="android:textSize">@dimen/gm_sys_typescale_overline_text_size</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_overline_text_all_caps</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_overline_letter_spacing</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Base.TextAppearance.GoogleMaterial.Subtitle1" parent="@style/TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textSize">@dimen/gm_sys_typescale_subtitle1_text_size</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_subtitle1_text_all_caps</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_subtitle1_letter_spacing</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Base.TextAppearance.GoogleMaterial.Subtitle2" parent="@style/TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textSize">@dimen/gm_sys_typescale_subtitle2_text_size</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_subtitle2_text_all_caps</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_subtitle2_letter_spacing</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Base.TextAppearance.MaterialComponents.Button" parent="@style/TextAppearance.AppCompat.Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.0893</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Base.TextAppearance.MaterialComponents.Headline6" parent="@style/TextAppearance.AppCompat.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.0125</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Base.TextAppearance.MaterialComponents.Subtitle2" parent="@style/TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">0x1</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.0071</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Base.TextAppearance.Widget.AppCompat.Toolbar.Subtitle" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Subtitle">
+    </style>
+    <style name="Base.TextAppearance.Widget.AppCompat.Toolbar.Title" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
+    </style>
+    <style name="Base.Theme.AppCompat" parent="@style/Base.V21.Theme.AppCompat">
+    </style>
+    <style name="Base.Theme.AppCompat.Light" parent="@style/Base.V21.Theme.AppCompat.Light">
+    </style>
+    <style name="Base.Theme.AppCompat.Light.Dialog" parent="@style/Base.V21.Theme.AppCompat.Light.Dialog">
+    </style>
+    <style name="Base.Theme.GoogleMaterial.Dark" parent="@style/Base.V21.Theme.GoogleMaterial.Dark">
+    </style>
+    <style name="Base.Theme.GoogleMaterial.Light" parent="@style/Base.V21.Theme.GoogleMaterial.Light">
+        <item name="android:statusBarColor">@color/google_grey700</item>
+    </style>
+    <style name="Base.Theme.GoogleMaterial.Light.Dialog" parent="@style/Base.V21.Theme.GoogleMaterial.Light.Dialog">
+    </style>
+    <style name="Base.ThemeOverlay.AppCompat.Dialog" parent="@style/Base.V21.ThemeOverlay.AppCompat.Dialog">
+    </style>
+    <style name="Base.ThemeOverlay.GoogleMaterial.BottomSheetDialog" parent="@style/Base.V21.ThemeOverlay.GoogleMaterial.BottomSheetDialog">
+    </style>
+    <style name="Base.ThemeOverlay.GoogleMaterial.Dialog" parent="@style/Base.V21.ThemeOverlay.GoogleMaterial.Dialog">
+    </style>
+    <style name="Base.ThemeOverlay.GoogleMaterial.Dialog.Alert.Framework" parent="@style/Base.V21.ThemeOverlay.GoogleMaterial.Dialog.Alert.Framework">
+    </style>
+    <style name="Base.ThemeOverlay.GoogleMaterial.Light.Dialog.Alert.Framework" parent="@style/Base.V21.ThemeOverlay.GoogleMaterial.Light.Dialog.Alert.Framework">
+    </style>
+    <style name="Base.ThemeOverlay.GoogleMaterial.MaterialAlertDialog" parent="@style/Base.V21.ThemeOverlay.GoogleMaterial.MaterialAlertDialog">
+    </style>
+    <style name="Base.ThemeOverlay.MaterialComponents.Dialog" parent="@style/Base.V14.ThemeOverlay.MaterialComponents.Dialog">
+        <item name="android:windowBackground">@drawable/mtrl_dialog_background</item>
+    </style>
+    <style name="Base.ThemeOverlay.MaterialComponents.Dialog.Alert.Framework" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush</item>
+    </style>
+    <style name="Base.ThemeOverlay.MaterialComponents.Light.Dialog.Alert.Framework" parent="@android:style/Theme.Material.Light.Dialog.Alert">
+        <item name="android:buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush</item>
+    </style>
+    <style name="Base.V14.Widget.MaterialComponents.AutoCompleteTextView" parent="@style/Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textAppearance">?attr/textAppearanceSubtitle1</item>
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">17dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">17dp</item>
+        <item name="android:dropDownVerticalOffset">@dimen/mtrl_exposed_dropdown_menu_popup_vertical_offset</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:popupElevation">@dimen/mtrl_exposed_dropdown_menu_popup_elevation</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="enforceTextAppearance">true</item>
+    </style>
+    <style name="Base.V21.Theme.AppCompat" parent="@style/Base.V7.Theme.AppCompat">
+        <item name="android:colorControlNormal">?attr/colorControlNormal</item>
+        <item name="android:colorControlActivated">?attr/colorControlActivated</item>
+        <item name="android:colorButtonNormal">?attr/colorButtonNormal</item>
+        <item name="android:colorControlHighlight">?attr/colorControlHighlight</item>
+        <item name="android:colorPrimary">?attr/colorPrimary</item>
+        <item name="android:colorPrimaryDark">?attr/colorPrimaryDark</item>
+        <item name="android:colorAccent">?attr/colorAccent</item>
+        <item name="actionBarDivider">?android:attr/actionBarDivider</item>
+        <item name="actionBarItemBackground">@drawable/abc_action_bar_item_background_material</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="actionButtonStyle">?android:attr/actionButtonStyle</item>
+        <item name="actionModeBackground">?android:attr/actionModeBackground</item>
+        <item name="actionModeCloseDrawable">?android:attr/actionModeCloseDrawable</item>
+        <item name="borderlessButtonStyle">?android:attr/borderlessButtonStyle</item>
+        <item name="buttonStyle">?android:attr/buttonStyle</item>
+        <item name="buttonStyleSmall">?android:attr/buttonStyleSmall</item>
+        <item name="checkboxStyle">?android:attr/checkboxStyle</item>
+        <item name="checkedTextViewStyle">?android:attr/checkedTextViewStyle</item>
+        <item name="dividerHorizontal">?android:attr/dividerHorizontal</item>
+        <item name="dividerVertical">?android:attr/dividerVertical</item>
+        <item name="editTextBackground">@drawable/abc_edit_text_material</item>
+        <item name="editTextColor">?android:attr/editTextColor</item>
+        <item name="homeAsUpIndicator">?android:attr/homeAsUpIndicator</item>
+        <item name="listChoiceBackgroundIndicator">?android:attr/listChoiceBackgroundIndicator</item>
+        <item name="listPreferredItemHeightSmall">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="radioButtonStyle">?android:attr/radioButtonStyle</item>
+        <item name="ratingBarStyle">?android:attr/ratingBarStyle</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="spinnerStyle">?android:attr/spinnerStyle</item>
+        <item name="textAppearanceLargePopupMenu">?android:attr/textAppearanceLargePopupMenu</item>
+        <item name="textAppearanceSmallPopupMenu">?android:attr/textAppearanceSmallPopupMenu</item>
+    </style>
+    <style name="Base.V21.Theme.AppCompat.Light" parent="@style/Base.V7.Theme.AppCompat.Light">
+        <item name="android:colorControlNormal">?attr/colorControlNormal</item>
+        <item name="android:colorControlActivated">?attr/colorControlActivated</item>
+        <item name="android:colorButtonNormal">?attr/colorButtonNormal</item>
+        <item name="android:colorControlHighlight">?attr/colorControlHighlight</item>
+        <item name="android:colorPrimary">?attr/colorPrimary</item>
+        <item name="android:colorPrimaryDark">?attr/colorPrimaryDark</item>
+        <item name="android:colorAccent">?attr/colorAccent</item>
+        <item name="actionBarDivider">?android:attr/actionBarDivider</item>
+        <item name="actionBarItemBackground">@drawable/abc_action_bar_item_background_material</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="actionButtonStyle">?android:attr/actionButtonStyle</item>
+        <item name="actionModeBackground">?android:attr/actionModeBackground</item>
+        <item name="actionModeCloseDrawable">?android:attr/actionModeCloseDrawable</item>
+        <item name="borderlessButtonStyle">?android:attr/borderlessButtonStyle</item>
+        <item name="buttonStyle">?android:attr/buttonStyle</item>
+        <item name="buttonStyleSmall">?android:attr/buttonStyleSmall</item>
+        <item name="checkboxStyle">?android:attr/checkboxStyle</item>
+        <item name="checkedTextViewStyle">?android:attr/checkedTextViewStyle</item>
+        <item name="dividerHorizontal">?android:attr/dividerHorizontal</item>
+        <item name="dividerVertical">?android:attr/dividerVertical</item>
+        <item name="editTextBackground">@drawable/abc_edit_text_material</item>
+        <item name="editTextColor">?android:attr/editTextColor</item>
+        <item name="homeAsUpIndicator">?android:attr/homeAsUpIndicator</item>
+        <item name="listChoiceBackgroundIndicator">?android:attr/listChoiceBackgroundIndicator</item>
+        <item name="listPreferredItemHeightSmall">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="radioButtonStyle">?android:attr/radioButtonStyle</item>
+        <item name="ratingBarStyle">?android:attr/ratingBarStyle</item>
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="spinnerStyle">?android:attr/spinnerStyle</item>
+        <item name="textAppearanceLargePopupMenu">?android:attr/textAppearanceLargePopupMenu</item>
+        <item name="textAppearanceSmallPopupMenu">?android:attr/textAppearanceSmallPopupMenu</item>
+    </style>
+    <style name="Base.V21.Theme.AppCompat.Light.Dialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowElevation">@dimen/abc_floating_window_z</item>
+    </style>
+    <style name="Base.V21.Theme.GoogleMaterial.Dark" parent="@style/Base.V14.Theme.GoogleMaterial.Dark">
+        <item name="android:alertDialogTheme">@style/ThemeOverlay.GoogleMaterial.Dialog.Alert.Framework</item>
+        <item name="android:timePickerDialogTheme">@style/ThemeOverlay.GoogleMaterial.Dialog</item>
+        <item name="android:datePickerDialogTheme">@style/ThemeOverlay.GoogleMaterial.Dialog</item>
+        <item name="android:colorEdgeEffect">@color/google_grey500</item>
+    </style>
+    <style name="Base.V21.Theme.GoogleMaterial.Light" parent="@style/Base.V14.Theme.GoogleMaterial.Light">
+        <item name="android:alertDialogTheme">@style/ThemeOverlay.GoogleMaterial.Light.Dialog.Alert.Framework</item>
+        <item name="android:timePickerDialogTheme">@style/ThemeOverlay.GoogleMaterial.Dialog</item>
+        <item name="android:datePickerDialogTheme">@style/ThemeOverlay.GoogleMaterial.Dialog</item>
+        <item name="android:colorEdgeEffect">@color/google_grey500</item>
+    </style>
+    <style name="Base.V21.Theme.GoogleMaterial.Light.Dialog" parent="@style/Base.V14.Theme.GoogleMaterial.Light.Dialog">
+        <item name="android:alertDialogTheme">@style/ThemeOverlay.GoogleMaterial.Light.Dialog.Alert.Framework</item>
+        <item name="android:colorEdgeEffect">@color/google_grey500</item>
+    </style>
+    <style name="Base.V21.ThemeOverlay.AppCompat.Dialog" parent="@style/Base.V7.ThemeOverlay.AppCompat.Dialog">
+        <item name="android:windowElevation">@dimen/abc_floating_window_z</item>
+    </style>
+    <style name="Base.V21.ThemeOverlay.GoogleMaterial.BottomSheetDialog" parent="@style/Base.V14.ThemeOverlay.GoogleMaterial.BottomSheetDialog">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Base.V21.ThemeOverlay.GoogleMaterial.Dialog" parent="@style/Base.V14.ThemeOverlay.GoogleMaterial.Dialog">
+        <item name="android:windowBackground">@drawable/google_dialog_background</item>
+    </style>
+    <style name="Base.V21.ThemeOverlay.GoogleMaterial.Dialog.Alert.Framework" parent="@style/ThemeOverlay.MaterialComponents.Dialog.Alert.Framework">
+        <item name="android:buttonBarButtonStyle">@style/Widget.GoogleMaterial.Button.TextButton.Dialog</item>
+    </style>
+    <style name="Base.V21.ThemeOverlay.GoogleMaterial.Light.Dialog.Alert.Framework" parent="@style/ThemeOverlay.MaterialComponents.Light.Dialog.Alert.Framework">
+        <item name="android:buttonBarButtonStyle">@style/Widget.GoogleMaterial.Button.TextButton.Dialog</item>
+    </style>
+    <style name="Base.V21.ThemeOverlay.GoogleMaterial.MaterialAlertDialog" parent="@style/Base.V14.ThemeOverlay.GoogleMaterial.MaterialAlertDialog">
+        <item name="android:windowElevation">@dimen/google_window_elevation</item>
+    </style>
+    <style name="Base.V21.ThemeOverlay.MaterialComponents.BottomSheetDialog" parent="@style/Base.V14.ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ActionBar.TabText" parent="@android:style/Widget.Material.ActionBar.TabText">
+    </style>
+    <style name="Base.Widget.AppCompat.ActionBar.TabView" parent="@android:style/Widget.Material.ActionBar.TabView">
+    </style>
+    <style name="Base.Widget.AppCompat.ActionButton" parent="@android:style/Widget.Material.ActionButton">
+    </style>
+    <style name="Base.Widget.AppCompat.ActionButton.CloseMode" parent="@android:style/Widget.Material.ActionButton.CloseMode">
+        <item name="android:minWidth">56dp</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ActionButton.Overflow" parent="@android:style/Widget.Material.ActionButton.Overflow">
+        <item name="android:src">@null</item>
+        <item name="srcCompat">@drawable/abc_ic_menu_overflow_material</item>
+    </style>
+    <style name="Base.Widget.AppCompat.AutoCompleteTextView" parent="@android:style/Widget.Material.AutoCompleteTextView">
+        <item name="android:background">?attr/editTextBackground</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Button" parent="@android:style/Widget.Material.Button">
+    </style>
+    <style name="Base.Widget.AppCompat.Button.Borderless" parent="@android:style/Widget.Material.Button.Borderless">
+    </style>
+    <style name="Base.Widget.AppCompat.Button.Borderless.Colored" parent="@android:style/Widget.Material.Button.Borderless.Colored">
+        <item name="android:textColor">@color/abc_btn_colored_borderless_text_material</item>
+    </style>
+    <style name="Base.Widget.AppCompat.Button.Small" parent="@android:style/Widget.Material.Button.Small">
+    </style>
+    <style name="Base.Widget.AppCompat.ButtonBar" parent="@android:style/Widget.Material.ButtonBar">
+    </style>
+    <style name="Base.Widget.AppCompat.CompoundButton.CheckBox" parent="@android:style/Widget.Material.CompoundButton.CheckBox">
+    </style>
+    <style name="Base.Widget.AppCompat.CompoundButton.RadioButton" parent="@android:style/Widget.Material.CompoundButton.RadioButton">
+    </style>
+    <style name="Base.Widget.AppCompat.DropDownItem.Spinner" parent="@android:style/Widget.Material.DropDownItem.Spinner">
+    </style>
+    <style name="Base.Widget.AppCompat.EditText" parent="@android:style/Widget.Material.EditText">
+        <item name="android:background">?attr/editTextBackground</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ImageButton" parent="@android:style/Widget.Material.ImageButton">
+    </style>
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabText" parent="@android:style/Widget.Material.Light.ActionBar.TabText">
+    </style>
+    <style name="Base.Widget.AppCompat.Light.ActionBar.TabView" parent="@android:style/Widget.Material.Light.ActionBar.TabView">
+    </style>
+    <style name="Base.Widget.AppCompat.Light.PopupMenu" parent="@android:style/Widget.Material.Light.PopupMenu">
+    </style>
+    <style name="Base.Widget.AppCompat.Light.PopupMenu.Overflow" parent="@style/Base.Widget.AppCompat.Light.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">-4dp</item>
+        <item name="android:overlapAnchor">true</item>
+    </style>
+    <style name="Base.Widget.AppCompat.ListPopupWindow" parent="@android:style/Widget.Material.ListPopupWindow">
+    </style>
+    <style name="Base.Widget.AppCompat.ListView" parent="@android:style/Widget.Material.ListView">
+    </style>
+    <style name="Base.Widget.AppCompat.ListView.DropDown" parent="@android:style/Widget.Material.ListView.DropDown">
+    </style>
+    <style name="Base.Widget.AppCompat.ListView.Menu" parent="@style/Base.Widget.AppCompat.ListView">
+    </style>
+    <style name="Base.Widget.AppCompat.PopupMenu" parent="@android:style/Widget.Material.PopupMenu">
+    </style>
+    <style name="Base.Widget.AppCompat.PopupMenu.Overflow" parent="@style/Base.Widget.AppCompat.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">-4dp</item>
+        <item name="android:overlapAnchor">true</item>
+    </style>
+    <style name="Base.Widget.AppCompat.RatingBar" parent="@android:style/Widget.Material.RatingBar">
+    </style>
+    <style name="Base.Widget.AppCompat.SeekBar" parent="@android:style/Widget.Material.SeekBar">
+    </style>
+    <style name="Base.Widget.AppCompat.Spinner" parent="@android:style/Widget.Material.Spinner">
+    </style>
+    <style name="Base.Widget.AppCompat.TextView" parent="@android:style/Widget.Material.TextView">
+    </style>
+    <style name="Base.Widget.AppCompat.TextView.SpinnerItem" parent="@android:style/Widget.Material.TextView.SpinnerItem">
+    </style>
+    <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="@android:style/Widget.Material.Toolbar.Button.Navigation">
+    </style>
+    <style name="Base.Widget.GoogleMaterial.Chip" parent="@style/Base.Widget.MaterialComponents.Chip">
+        <item name="android:textAppearance">@style/TextAppearance.GoogleMaterial.Chip.Input</item>
+        <item name="android:textColor">@color/google_chip_text_color</item>
+        <item name="android:stateListAnimator">@animator/google_chip_state_list_anim</item>
+        <item name="checkedIcon">@drawable/ic_google_chip_checked_circle</item>
+        <item name="chipBackgroundColor">@color/google_chip_background_color</item>
+        <item name="chipIcon">@null</item>
+        <item name="chipIconSize">18dp</item>
+        <item name="chipStrokeColor">@color/google_chip_stroke_color</item>
+        <item name="chipStrokeWidth">1dp</item>
+        <item name="chipSurfaceColor">@color/google_chip_surface_color</item>
+        <item name="closeIcon">@drawable/ic_google_chip_close</item>
+        <item name="closeIconSize">18dp</item>
+        <item name="closeIconTint">@color/google_chip_text_color</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="enforceTextAppearance">false</item>
+        <item name="ensureMinTouchTargetSize">false</item>
+        <item name="rippleColor">@color/google_chip_ripple_color</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.GoogleMaterial.Chip</item>
+    </style>
+    <style name="Base.Widget.MaterialComponents.AutoCompleteTextView" parent="@style/Base.V14.Widget.MaterialComponents.AutoCompleteTextView">
+        <item name="android:popupBackground">@null</item>
+    </style>
+    <style name="Base.Widget.MaterialComponents.CheckedTextView" parent="@android:style/Widget.Material.CheckedTextView">
+    </style>
+    <style name="Base.Widget.MaterialComponents.Chip" parent="@android:style/Widget">
+        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:textColor">@color/mtrl_chip_text_color</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:text">@null</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:checkable">false</item>
+        <item name="android:stateListAnimator">@animator/mtrl_chip_state_list_anim</item>
+        <item name="checkedIcon">@drawable/ic_mtrl_chip_checked_circle</item>
+        <item name="checkedIconVisible">true</item>
+        <item name="chipBackgroundColor">@color/mtrl_chip_background_color</item>
+        <item name="chipEndPadding">6dp</item>
+        <item name="chipIcon">@null</item>
+        <item name="chipIconSize">24dp</item>
+        <item name="chipIconVisible">true</item>
+        <item name="chipMinHeight">32dp</item>
+        <item name="chipMinTouchTargetSize">48dp</item>
+        <item name="chipStartPadding">4dp</item>
+        <item name="chipStrokeColor">?attr/colorOnSurface</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipSurfaceColor">@color/mtrl_chip_surface_color</item>
+        <item name="closeIcon">@drawable/ic_mtrl_chip_close_circle</item>
+        <item name="closeIconEndPadding">2dp</item>
+        <item name="closeIconSize">18dp</item>
+        <item name="closeIconStartPadding">2dp</item>
+        <item name="closeIconTint">@color/mtrl_chip_close_icon_tint</item>
+        <item name="closeIconVisible">true</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="enforceTextAppearance">true</item>
+        <item name="ensureMinTouchTargetSize">true</item>
+        <item name="iconEndPadding">0dp</item>
+        <item name="iconStartPadding">0dp</item>
+        <item name="rippleColor">@color/mtrl_on_surface_ripple_color</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceSmallComponent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialComponents.Chip</item>
+        <item name="textEndPadding">6dp</item>
+        <item name="textStartPadding">8dp</item>
+    </style>
+    <style name="Base.Widget.MaterialComponents.PopupMenu.ContextMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:overlapAnchor">true</item>
+    </style>
+    <style name="Base.Widget.MaterialComponents.PopupMenu.ListPopupWindow" parent="@style/Widget.AppCompat.ListPopupWindow">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+        <item name="android:dropDownVerticalOffset">1dp</item>
+        <item name="android:popupElevation">8dp</item>
+    </style>
+    <style name="InternalScrimViewStyle">
+        <item name="android:elevation">@dimen/mtrl_scrim_view_elevation</item>
+    </style>
+    <style name="InternalSpeedDialViewStyle">
+        <item name="android:elevation">@dimen/mtrl_floating_speed_dial_elevation</item>
+    </style>
+    <style name="Platform.AppCompat" parent="@style/Platform.V21.AppCompat">
+    </style>
+    <style name="Platform.AppCompat.Light" parent="@style/Platform.V21.AppCompat.Light">
+    </style>
+    <style name="Platform.ThemeOverlay.AppCompat">
+        <item name="android:colorControlNormal">?attr/colorControlNormal</item>
+        <item name="android:colorControlActivated">?attr/colorControlActivated</item>
+        <item name="android:colorButtonNormal">?attr/colorButtonNormal</item>
+        <item name="android:colorControlHighlight">?attr/colorControlHighlight</item>
+        <item name="android:colorPrimary">?attr/colorPrimary</item>
+        <item name="android:colorPrimaryDark">?attr/colorPrimaryDark</item>
+        <item name="android:colorAccent">?attr/colorAccent</item>
+    </style>
+    <style name="Platform.ThemeOverlay.AppCompat.Dark" parent="@style/Platform.ThemeOverlay.AppCompat">
+    </style>
+    <style name="Platform.ThemeOverlay.AppCompat.Light" parent="@style/Platform.ThemeOverlay.AppCompat">
+    </style>
+    <style name="Platform.V21.AppCompat" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:textColorHintInverse">@color/abc_hint_foreground_material_light</item>
+        <item name="android:textColorHint">@color/abc_hint_foreground_material_dark</item>
+        <item name="android:textColorLink">?android:attr/colorAccent</item>
+        <item name="android:buttonBarStyle">?attr/buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
+        <item name="android:textColorLinkInverse">?android:attr/colorAccent</item>
+    </style>
+    <style name="Platform.V21.AppCompat.Light" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:textColorHintInverse">@color/abc_hint_foreground_material_dark</item>
+        <item name="android:textColorHint">@color/abc_hint_foreground_material_light</item>
+        <item name="android:textColorLink">?android:attr/colorAccent</item>
+        <item name="android:buttonBarStyle">?attr/buttonBarStyle</item>
+        <item name="android:buttonBarButtonStyle">?attr/buttonBarButtonStyle</item>
+        <item name="android:textColorLinkInverse">?android:attr/colorAccent</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Body1" parent="@style/TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/gm_sys_typescale_body1_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_body1_text_all_caps</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_body1_letter_spacing</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Body2" parent="@style/TextAppearance.MaterialComponents.Body2">
+        <item name="android:textSize">@dimen/gm_sys_typescale_body2_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_body2_text_all_caps</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_body2_letter_spacing</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Button" parent="@style/Base.TextAppearance.GoogleMaterial.Button">
+        <item name="android:textSize">@dimen/gm_sys_typescale_button_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_button_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_button_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans_medium</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Caption" parent="@style/TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">@dimen/gm_sys_typescale_caption_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_caption_text_all_caps</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_caption_letter_spacing</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Display1" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/gm_sys_typescale_display1_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_display1_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_display1_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Display2" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/gm_sys_typescale_display2_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_display2_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_display2_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Display3" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/gm_sys_typescale_display3_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_display3_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_display3_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Headline1" parent="@style/TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textSize">@dimen/gm_sys_typescale_headline1_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_headline1_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_headline1_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Headline2" parent="@style/TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textSize">@dimen/gm_sys_typescale_headline2_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_headline2_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_headline2_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Headline3" parent="@style/TextAppearance.MaterialComponents.Headline3">
+        <item name="android:textSize">@dimen/gm_sys_typescale_headline3_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_headline3_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_headline3_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Headline4" parent="@style/TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textSize">@dimen/gm_sys_typescale_headline4_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_headline4_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_headline4_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Headline5" parent="@style/TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textSize">@dimen/gm_sys_typescale_headline5_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_headline5_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_headline5_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Headline6" parent="@style/TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textSize">@dimen/gm_sys_typescale_headline6_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_headline6_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_headline6_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.MaterialButton" parent="@style/TextAppearance.GoogleMaterial.Button">
+        <item name="android:textColor">@color/google_btn_text_color_selector</item>
+        <item name="android:letterSpacing">@dimen/google_btn_letter_spacing</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Overline" parent="@style/Base.TextAppearance.GoogleMaterial.Overline">
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Subhead1" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/gm_sys_typescale_subhead1_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_subhead1_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_subhead1_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans_medium</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Subhead2" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/gm_sys_typescale_subhead2_text_size</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">@bool/gm_sys_typescale_subhead2_text_all_caps</item>
+        <item name="android:fontFamily">@font/google_sans_medium</item>
+        <item name="android:letterSpacing">@dimen/gm_sys_typescale_subhead2_letter_spacing</item>
+        <item name="fontFamily">@font/google_sans_medium</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Subtitle1" parent="@style/Base.TextAppearance.GoogleMaterial.Subtitle1">
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="TextAppearance.GoogleMaterial.Subtitle2" parent="@style/Base.TextAppearance.GoogleMaterial.Subtitle2">
+        <item name="android:textStyle">0x0</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Body1" parent="@style/TextAppearance.AppCompat.Body2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.0312</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Body2" parent="@style/TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.0179</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Button" parent="@style/Base.TextAppearance.MaterialComponents.Button">
+        <item name="android:textStyle">0x0</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Caption" parent="@style/TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.0333</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Headline1" parent="@style/TextAppearance.AppCompat.Display4">
+        <item name="android:textSize">96sp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing">-0.0156</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Headline2" parent="@style/TextAppearance.AppCompat.Display3">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing">-0.0083</item>
+        <item name="fontFamily">sans-serif-light</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Headline3" parent="@style/TextAppearance.AppCompat.Display2">
+        <item name="android:textSize">48sp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Headline4" parent="@style/TextAppearance.AppCompat.Display1">
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.0074</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Headline5" parent="@style/TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Headline6" parent="@style/Base.TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textStyle">0x0</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Overline" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.1667</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Subtitle1" parent="@style/TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">0x0</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing">0.0094</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.MaterialComponents.Subtitle2" parent="@style/Base.TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textStyle">0x0</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="ThemeOverlay.GoogleMaterial.Dialog.Alert.Framework" parent="@style/Base.ThemeOverlay.GoogleMaterial.Dialog.Alert.Framework">
+    </style>
+    <style name="ThemeOverlay.GoogleMaterial.Light.Dialog.Alert.Framework" parent="@style/Base.ThemeOverlay.GoogleMaterial.Light.Dialog.Alert.Framework">
+    </style>
+    <style name="ThemeOverlay.GoogleMaterial.MaterialCalendar" parent="@style/ThemeOverlay.GoogleMaterial.Dialog">
+        <item name="android:windowElevation">@dimen/google_window_elevation</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.GoogleMaterial.Button.TextButton.Dialog</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.GoogleMaterial.Button.TextButton.Dialog</item>
+        <item name="materialCalendarDay">@style/Widget.GoogleMaterial.MaterialCalendar.DayTextView</item>
+        <item name="materialCalendarDayOfWeekLabel">@style/Widget.GoogleMaterial.MaterialCalendar.DayOfWeekLabel</item>
+        <item name="materialCalendarHeaderCancelButton">@style/Widget.GoogleMaterial.MaterialCalendar.HeaderCancelButton</item>
+        <item name="materialCalendarHeaderConfirmButton">@style/Widget.GoogleMaterial.Button.TextButton</item>
+        <item name="materialCalendarHeaderDivider">@style/Widget.GoogleMaterial.MaterialCalendar.HeaderDivider</item>
+        <item name="materialCalendarHeaderLayout">@style/Widget.GoogleMaterial.MaterialCalendar.HeaderLayout</item>
+        <item name="materialCalendarHeaderSelection">@style/Widget.GoogleMaterial.MaterialCalendar.HeaderSelection</item>
+        <item name="materialCalendarHeaderTitle">@style/Widget.GoogleMaterial.MaterialCalendar.HeaderTitle</item>
+        <item name="materialCalendarHeaderToggleButton">@style/Widget.GoogleMaterial.MaterialCalendar.HeaderToggleButton</item>
+        <item name="materialCalendarMonth">@style/Widget.GoogleMaterial.MaterialCalendar.MonthTextView</item>
+        <item name="materialCalendarMonthNavigationButton">@style/Widget.GoogleMaterial.MaterialCalendar.MonthNavigationButton</item>
+        <item name="materialCalendarStyle">@style/Widget.GoogleMaterial.MaterialCalendar</item>
+        <item name="materialCalendarYearNavigationButton">@style/Widget.GoogleMaterial.MaterialCalendar.YearNavigationButton</item>
+    </style>
+    <style name="ThemeOverlay.GoogleMaterial.MaterialTimePicker" parent="@style/ThemeOverlay.GoogleMaterial.Dialog">
+        <item name="android:windowElevation">@dimen/google_window_elevation</item>
+        <item name="chipStyle">@style/Widget.GoogleMaterial.TimePicker.Display</item>
+        <item name="colorOnPrimary">?attr/colorOnPrimaryGoogle</item>
+        <item name="colorPrimary">?attr/colorPrimaryGoogle</item>
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="imageButtonStyle">@style/Widget.GoogleMaterial.MaterialTimePicker.ImageButton</item>
+        <item name="materialButtonOutlinedStyle">@style/Widget.GoogleMaterial.TimePicker.Button</item>
+        <item name="materialClockStyle">@style/Widget.GoogleMaterial.MaterialTimePicker.Clock</item>
+        <item name="materialDisplayDividerStyle">@style/Widget.MaterialComponents.TimePicker.Display.Divider</item>
+        <item name="materialTimePickerStyle">@style/Widget.GoogleMaterial.MaterialTimePicker</item>
+        <item name="materialTimePickerTitleStyle">@style/TextAppearance.GoogleMaterial.TimePicker.Title</item>
+        <item name="minTouchTargetSize">@dimen/google_min_touch_target_size</item>
+        <item name="textInputStyle">@style/Widget.MaterialComponents.TimePicker.Display.TextInputLayout</item>
+    </style>
+    <style name="ThemeOverlay.MaterialComponents.BottomSheetDialog" parent="@style/Base.V21.ThemeOverlay.MaterialComponents.BottomSheetDialog">
+    </style>
+    <style name="ThemeOverlay.MaterialComponents.Dialog.Alert.Framework" parent="@style/Base.ThemeOverlay.MaterialComponents.Dialog.Alert.Framework">
+    </style>
+    <style name="ThemeOverlay.MaterialComponents.Light.Dialog.Alert.Framework" parent="@style/Base.ThemeOverlay.MaterialComponents.Light.Dialog.Alert.Framework">
+    </style>
+    <style name="Widget.Design.AppBarLayout" parent="@android:style/Widget">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:stateListAnimator">@animator/design_appbar_state_list_animator</item>
+        <item name="android:touchscreenBlocksFocus">true</item>
+    </style>
+    <style name="Widget.Design.BottomSheet.Modal" parent="@android:style/Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:elevation">@dimen/design_bottom_sheet_modal_elevation</item>
+        <item name="backgroundTint">@null</item>
+        <item name="behavior_hideable">true</item>
+        <item name="behavior_peekHeight">-1</item>
+        <item name="behavior_skipCollapsed">false</item>
+        <item name="enforceMaterialTheme">false</item>
+        <item name="shapeAppearance">@null</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+    <style name="Widget.GoogleMaterial.BottomSheet" parent="@style/Widget.MaterialComponents.BottomSheet">
+        <item name="android:elevation">@dimen/google_bottom_sheet_elevation</item>
+        <item name="backgroundTint">?attr/colorSurface</item>
+        <item name="enforceMaterialTheme">true</item>
+    </style>
+    <style name="Widget.GoogleMaterial.BottomSheet.Modal" parent="@style/Widget.GoogleMaterial.BottomSheet">
+        <item name="android:elevation">@dimen/google_bottom_sheet_modal_elevation</item>
+    </style>
+    <style name="Widget.GoogleMaterial.Button" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:textAppearance">@style/TextAppearance.GoogleMaterial.MaterialButton</item>
+        <item name="android:textColor">@color/google_btn_text_color_selector</item>
+        <item name="android:paddingLeft">@dimen/google_btn_padding_left</item>
+        <item name="android:paddingRight">@dimen/google_btn_padding_right</item>
+        <item name="android:maxWidth">@null</item>
+        <item name="android:stateListAnimator">@animator/google_btn_state_list_anim</item>
+        <item name="backgroundTint">@color/google_btn_filled_btn_bg_color_selector</item>
+        <item name="elevation">0dp</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="enforceTextAppearance">false</item>
+        <item name="iconTint">@color/google_btn_text_color_selector</item>
+        <item name="rippleColor">@color/google_btn_filled_btn_ripple_color</item>
+    </style>
+    <style name="Widget.GoogleMaterial.CardView" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="android:stateListAnimator">@animator/google_card_state_list_anim</item>
+        <item name="cardCornerRadius">@dimen/google_card_corner_radius</item>
+        <item name="cardElevation">@dimen/google_card_elevation</item>
+        <item name="cardForegroundColor">@color/google_card_foreground</item>
+        <item name="checkedIcon">@drawable/quantum_ic_check_box_black_24</item>
+        <item name="checkedIconTint">?attr/colorPrimaryGoogle</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="rippleColor">@color/google_card_ripple</item>
+        <item name="shapeAppearance">@null</item>
+        <item name="strokeColor">@color/google_card_stroke</item>
+        <item name="strokeWidth">@dimen/google_card_stroke_width</item>
+    </style>
+    <style name="Widget.GoogleMaterial.CardView.Elevated" parent="@style/Widget.GoogleMaterial.CardView">
+        <item name="android:stateListAnimator">@animator/google_card_elevated_state_list_anim</item>
+        <item name="cardElevation">1dp</item>
+        <item name="strokeWidth">0dp</item>
+    </style>
+    <style name="Widget.GoogleMaterial.OpenSearchView" parent="@android:style/Widget">
+        <item name="android:textAppearance">@style/TextAppearance.GoogleMaterial.OpenSearchView</item>
+        <item name="android:elevation">@dimen/google_opensearchview_elevation</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.GoogleMaterial.OpenSearch</item>
+    </style>
+    <style name="Widget.GoogleMaterial.PopupMenu" parent="@style/Widget.MaterialComponents.PopupMenu">
+        <item name="android:popupElevation">@dimen/google_menu_elevation</item>
+    </style>
+    <style name="Widget.GoogleMaterial.PopupMenu.ContextMenu" parent="@style/Widget.MaterialComponents.PopupMenu.ContextMenu">
+        <item name="android:popupElevation">@dimen/google_menu_elevation</item>
+    </style>
+    <style name="Widget.GoogleMaterial.PopupMenu.ListPopupWindow" parent="@style/Widget.MaterialComponents.PopupMenu.ListPopupWindow">
+        <item name="android:popupElevation">@dimen/google_menu_elevation</item>
+    </style>
+    <style name="Widget.GoogleMaterial.PopupMenu.Overflow" parent="@style/Widget.MaterialComponents.PopupMenu.Overflow">
+        <item name="android:popupElevation">@dimen/google_menu_elevation</item>
+    </style>
+    <style name="Widget.GoogleMaterial.TabLayout.Secondary" parent="@style/Widget.GoogleMaterial.TabLayout">
+        <item name="android:background">@drawable/google_tabs_secondary_tabs_background</item>
+        <item name="tabIndicator">@drawable/google_tabs_line_indicator</item>
+        <item name="tabIndicatorFullWidth">true</item>
+        <item name="tabTextColor">@color/google_tabs_secondary_text_color_selector</item>
+    </style>
+    <style name="Widget.MaterialComponents.BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:layout_gravity">0x1</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxWidth">@dimen/material_bottom_sheet_max_width</item>
+        <item name="android:elevation">@dimen/design_bottom_sheet_elevation</item>
+        <item name="backgroundTint">?attr/colorSurface</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceLargeComponent</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialComponents.BottomSheet</item>
+    </style>
+    <style name="Widget.MaterialComponents.BottomSheet.Modal" parent="@style/Widget.MaterialComponents.BottomSheet">
+        <item name="android:elevation">@dimen/design_bottom_sheet_modal_elevation</item>
+    </style>
+    <style name="Widget.MaterialComponents.Button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textAppearance">?attr/textAppearanceButton</item>
+        <item name="android:textColor">@color/mtrl_btn_text_color_selector</item>
+        <item name="android:paddingLeft">@dimen/mtrl_btn_padding_left</item>
+        <item name="android:paddingTop">@dimen/mtrl_btn_padding_top</item>
+        <item name="android:paddingRight">@dimen/mtrl_btn_padding_right</item>
+        <item name="android:paddingBottom">@dimen/mtrl_btn_padding_bottom</item>
+        <item name="android:maxWidth">@dimen/mtrl_btn_max_width</item>
+        <item name="android:insetLeft">0dp</item>
+        <item name="android:insetRight">0dp</item>
+        <item name="android:insetTop">@dimen/mtrl_btn_inset</item>
+        <item name="android:insetBottom">@dimen/mtrl_btn_inset</item>
+        <item name="android:stateListAnimator">@animator/mtrl_btn_state_list_anim</item>
+        <item name="backgroundTint">@color/mtrl_btn_bg_color_selector</item>
+        <item name="cornerRadius">@null</item>
+        <item name="elevation">@dimen/mtrl_btn_elevation</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="enforceTextAppearance">true</item>
+        <item name="iconPadding">@dimen/mtrl_btn_icon_padding</item>
+        <item name="iconTint">@color/mtrl_btn_text_color_selector</item>
+        <item name="rippleColor">@color/mtrl_btn_ripple_color</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceSmallComponent</item>
+    </style>
+    <style name="Widget.MaterialComponents.Button.UnelevatedButton" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:stateListAnimator">@animator/mtrl_btn_unelevated_state_list_anim</item>
+        <item name="elevation">0dp</item>
+    </style>
+    <style name="Widget.MaterialComponents.CardView" parent="@style/CardView">
+        <item name="android:stateListAnimator">@animator/mtrl_card_state_list_anim</item>
+        <item name="cardBackgroundColor">?attr/colorSurface</item>
+        <item name="cardCornerRadius">@null</item>
+        <item name="cardElevation">@dimen/mtrl_card_elevation</item>
+        <item name="cardForegroundColor">@color/mtrl_card_view_foreground</item>
+        <item name="checkedIcon">@drawable/ic_mtrl_checked_circle</item>
+        <item name="checkedIconMargin">@dimen/mtrl_card_checked_icon_margin</item>
+        <item name="checkedIconSize">@dimen/mtrl_card_checked_icon_size</item>
+        <item name="checkedIconTint">?attr/colorPrimary</item>
+        <item name="enforceMaterialTheme">true</item>
+        <item name="rippleColor">@color/mtrl_card_view_ripple</item>
+        <item name="shapeAppearance">?attr/shapeAppearanceMediumComponent</item>
+    </style>
+    <style name="Widget.MaterialComponents.ExtendedFloatingActionButton" parent="@style/Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/mtrl_fab_icon_text_color_selector</item>
+        <item name="android:paddingLeft">@dimen/mtrl_extended_fab_start_padding</item>
+        <item name="android:paddingTop">@dimen/mtrl_extended_fab_top_padding</item>
+        <item name="android:paddingRight">@dimen/mtrl_extended_fab_end_padding</item>
+        <item name="android:paddingBottom">@dimen/mtrl_extended_fab_bottom_padding</item>
+        <item name="android:minWidth">@dimen/mtrl_extended_fab_min_width</item>
+        <item name="android:minHeight">@dimen/mtrl_extended_fab_min_height</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">@dimen/mtrl_extended_fab_start_padding</item>
+        <item name="android:paddingEnd">@dimen/mtrl_extended_fab_end_padding</item>
+        <item name="android:stateListAnimator">@animator/mtrl_extended_fab_state_list_animator</item>
+        <item name="backgroundTint">@color/mtrl_fab_bg_color_selector</item>
+        <item name="collapsedSize">@dimen/design_fab_size_normal</item>
+        <item name="elevation">@dimen/mtrl_extended_fab_elevation</item>
+        <item name="iconPadding">@dimen/mtrl_extended_fab_icon_text_spacing</item>
+        <item name="iconSize">@dimen/mtrl_extended_fab_icon_size</item>
+        <item name="iconTint">@color/mtrl_fab_icon_text_color_selector</item>
+        <item name="rippleColor">@color/mtrl_fab_ripple_color</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialComponents.ExtendedFloatingActionButton</item>
+    </style>
+    <style name="Widget.MaterialComponents.PopupMenu" parent="@style/Base.Widget.MaterialComponents.PopupMenu">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+        <item name="android:popupElevation">8dp</item>
+    </style>
+    <style name="Widget.MaterialComponents.PopupMenu.Overflow" parent="@style/Base.Widget.MaterialComponents.PopupMenu.Overflow">
+        <item name="android:popupBackground">?attr/popupMenuBackground</item>
+        <item name="android:popupElevation">8dp</item>
+    </style>
+    <style name="Widget.MaterialComponents.Slider" parent="@style/Base.Widget.MaterialComponents.Slider">
+        <item name="android:background">?attr/controlBackground</item>
+    </style>
+</resources>

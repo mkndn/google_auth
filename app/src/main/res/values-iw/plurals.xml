@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">יובא חשבון אחד (%d)</item>
+        <item quantity="two">יובאו %d חשבונות</item>
+        <item quantity="many">יובאו %d חשבונות</item>
+        <item quantity="other">יובאו %d חשבונות</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">חשבון אחד (%d) יוצא</item>
+        <item quantity="two">%d חשבונות יוצאו</item>
+        <item quantity="many">%d חשבונות יוצאו</item>
+        <item quantity="other">%d חשבונות יוצאו</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">חשבון אחד (%d) יובא</item>
+        <item quantity="two">%d חשבונות יובאו</item>
+        <item quantity="many">%d חשבונות יובאו</item>
+        <item quantity="other">%d חשבונות יובאו</item>
+    </plurals>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="zero">%d ‏‮accounts‬‏ ‏‮imported‬‏</item>
+        <item quantity="one">%d ‏‮account‬‏ ‏‮imported‬‏</item>
+        <item quantity="two">%d ‏‮accounts‬‏ ‏‮imported‬‏</item>
+        <item quantity="few">%d ‏‮accounts‬‏ ‏‮imported‬‏</item>
+        <item quantity="many">%d ‏‮accounts‬‏ ‏‮imported‬‏</item>
+        <item quantity="other">%d ‏‮accounts‬‏ ‏‮imported‬‏</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="zero">‏‮Exported‬‏ %d ‏‮accounts‬‏</item>
+        <item quantity="one">‏‮Exported‬‏ %d ‏‮account‬‏</item>
+        <item quantity="two">‏‮Exported‬‏ %d ‏‮accounts‬‏</item>
+        <item quantity="few">‏‮Exported‬‏ %d ‏‮accounts‬‏</item>
+        <item quantity="many">‏‮Exported‬‏ %d ‏‮accounts‬‏</item>
+        <item quantity="other">‏‮Exported‬‏ %d ‏‮accounts‬‏</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="zero">‏‮Imported‬‏ %d ‏‮accounts‬‏</item>
+        <item quantity="one">‏‮Imported‬‏ %d ‏‮account‬‏</item>
+        <item quantity="two">‏‮Imported‬‏ %d ‏‮accounts‬‏</item>
+        <item quantity="few">‏‮Imported‬‏ %d ‏‮accounts‬‏</item>
+        <item quantity="many">‏‮Imported‬‏ %d ‏‮accounts‬‏</item>
+        <item quantity="other">‏‮Imported‬‏ %d ‏‮accounts‬‏</item>
+    </plurals>
+</resources>

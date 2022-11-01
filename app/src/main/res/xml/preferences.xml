@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/timesync_preference_screen_title" android:key="time_sync">
+        <intent android:action="com.google.android.apps.authenticator.timesync.TIME_CORRECTION_SETTINGS"/>
+    </PreferenceScreen>
+</PreferenceScreen>

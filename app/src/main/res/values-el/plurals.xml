@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">Εισήχθη %d λογαριασμός</item>
+        <item quantity="other">Εισήχθησαν %d λογαριασμοί</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Έγινε εξαγωγή %d λογαριασμού</item>
+        <item quantity="other">Έγινε εξαγωγή %d λογαριασμών</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Έγινε εισαγωγή %d λογαριασμού</item>
+        <item quantity="other">Έγινε εισαγωγή %d λογαριασμών</item>
+    </plurals>
+</resources>

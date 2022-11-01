@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d ama-akhawunti angenisiwe</item>
+        <item quantity="other">%d ama-akhawunti angenisiwe</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Ama-akhawunti ka-%d akhishiwe</item>
+        <item quantity="other">Ama-akhawunti ka-%d akhishiwe</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Ama-akhawunti ka-%d angenisiwe</item>
+        <item quantity="other">Ama-akhawunti ka-%d angenisiwe</item>
+    </plurals>
+</resources>

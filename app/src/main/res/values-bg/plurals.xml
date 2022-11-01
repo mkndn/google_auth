@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d профил бе импортиран</item>
+        <item quantity="other">%d профила бяха импортирани</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Експортиран е %d профил</item>
+        <item quantity="other">Експортирани са %d профила</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Импортиран е %d профил</item>
+        <item quantity="other">Импортирани са %d профила</item>
+    </plurals>
+</resources>

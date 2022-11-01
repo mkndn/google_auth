@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d обліковий запис імпортовано</item>
+        <item quantity="few">%d облікові записи імпортовано</item>
+        <item quantity="many">%d облікових записів імпортовано</item>
+        <item quantity="other">%d облікового запису імпортовано</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Експортовано %d обліковий запис</item>
+        <item quantity="few">Експортовано %d облікові записи</item>
+        <item quantity="many">Експортовано %d облікових записів</item>
+        <item quantity="other">Експортовано %d облікового запису</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Імпортовано %d обліковий запис</item>
+        <item quantity="few">Імпортовано %d облікові записи</item>
+        <item quantity="many">Імпортовано %d облікових записів</item>
+        <item quantity="other">Імпортовано %d облікового запису</item>
+    </plurals>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d खाता इंपोर्ट किया गया</item>
+        <item quantity="other">%d खाते इंपोर्ट किए गए</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">%d खाता एक्सपोर्ट किया गया</item>
+        <item quantity="other">%d खाते एक्सपोर्ट किए गए</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">%d खाता इंपोर्ट किया गया</item>
+        <item quantity="other">%d खाते इंपोर्ट किए गए</item>
+    </plurals>
+</resources>

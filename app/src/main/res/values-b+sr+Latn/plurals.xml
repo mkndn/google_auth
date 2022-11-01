@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d nalog je uvezen</item>
+        <item quantity="few">%d naloga su uvezena</item>
+        <item quantity="other">%d naloga je uvezeno</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Izvezen je %d nalog</item>
+        <item quantity="few">Izvezena su %d naloga</item>
+        <item quantity="other">Izvezeno je %d naloga</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Uvezen je %d nalog</item>
+        <item quantity="few">Uvezena su %d naloga</item>
+        <item quantity="other">Uvezeno je %d naloga</item>
+    </plurals>
+</resources>

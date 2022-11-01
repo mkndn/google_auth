@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/migration_import_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/toolbar_height"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="12dp">
+        <ImageView style="@style/ImportHeadingIconStyle"/>
+        <TextView android:text="@string/migration_import_page_title" style="@style/MigrationTextHeadingStyle"/>
+        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="28dp" android:text="@string/migration_import_page_subtitle" style="@style/MigrationTextBodyStyle"/>
+        <TextView android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp" android:text="@string/migration_import_page_instructions_step_1" style="@style/MigrationTextBodyStyle"/>
+        <TextView android:gravity="start" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:text="@string/migration_import_page_instructions_step_2" style="@style/MigrationTextBodyStyle"/>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="18dp">
+            <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+            <Button android:textColor="#fff" android:id="@+id/migration_export_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:text="@string/button_import_qr_code" android:onClick="buttonScanClicked"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

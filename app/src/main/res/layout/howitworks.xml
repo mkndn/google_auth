@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/howitworks_toppadding" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constrainedHeight="true" app:layout_constraintTop_toTopOf="0">
+        <View android:layout_width="match_parent" android:layout_height="56dp"/>
+    </LinearLayout>
+    <com.google.android.apps.authenticator.howitworks.WrapContentViewPager android:id="@+id/howitworks_pager" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@+id/howitworks_navigation_wrapper" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/howitworks_toppadding"/>
+    <FrameLayout android:id="@+id/howitworks_navigation_wrapper" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <include layout="@layout/howitworks_navigation"/>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

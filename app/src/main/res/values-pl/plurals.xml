@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">Zaimportowano %d konto</item>
+        <item quantity="few">Zaimportowano %d konta</item>
+        <item quantity="many">Zaimportowano %d kont</item>
+        <item quantity="other">Zaimportowano %d konta</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Wyeksportowano %d konto</item>
+        <item quantity="few">Wyeksportowano %d konta</item>
+        <item quantity="many">Wyeksportowano %d kont</item>
+        <item quantity="other">Wyeksportowano %d konta</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Zaimportowano %d konto</item>
+        <item quantity="few">Zaimportowano %d konta</item>
+        <item quantity="many">Zaimportowano %d kont</item>
+        <item quantity="other">Zaimportowano %d konta</item>
+    </plurals>
+</resources>

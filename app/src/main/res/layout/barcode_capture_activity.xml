@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/barcode_scanner_background" android:layout_width="match_parent" android:layout_height="match_parent" android:keepScreenOn="true">
+    <com.google.android.apps.authenticator.barcode.preview.CameraSourcePreview android:id="@+id/camera_source_preview" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.apps.authenticator.barcode.preview.GraphicOverlay android:id="@+id/graphic_overlay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </com.google.android.apps.authenticator.barcode.preview.CameraSourcePreview>
+</FrameLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">[ᐅ%dᐊ åççöûñţ îmþöŕţéð one two three four five]</item>
+        <item quantity="other">[ᐅ%dᐊ åççöûñţš îmþöŕţéð one two three four five]</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">[Éxþöŕţéð ᐅ%dᐊ åççöûñţ one two three four five]</item>
+        <item quantity="other">[Éxþöŕţéð ᐅ%dᐊ åççöûñţš one two three four five]</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">[Îmþöŕţéð ᐅ%dᐊ åççöûñţ one two three four five]</item>
+        <item quantity="other">[Îmþöŕţéð ᐅ%dᐊ åççöûñţš one two three four five]</item>
+    </plurals>
+</resources>

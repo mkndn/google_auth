@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d tili tuotu</item>
+        <item quantity="other">%d tiliä tuotu</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">%d tili viety</item>
+        <item quantity="other">%d tiliä viety</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">%d tili tuotu</item>
+        <item quantity="other">%d tiliä tuotu</item>
+    </plurals>
+</resources>

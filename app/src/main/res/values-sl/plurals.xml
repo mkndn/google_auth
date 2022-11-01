@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">Uvožen je %d račun</item>
+        <item quantity="two">Uvožena sta %d računa</item>
+        <item quantity="few">Uvoženi so %d računi</item>
+        <item quantity="other">Uvoženih je %d računov</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Izvožen je %d račun</item>
+        <item quantity="two">Izvožena sta %d računa</item>
+        <item quantity="few">Izvoženi so %d računi</item>
+        <item quantity="other">Izvoženih je %d računov</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Uvožen je %d račun</item>
+        <item quantity="two">Uvožena sta %d računa</item>
+        <item quantity="few">Uvoženi so %d računi</item>
+        <item quantity="other">Uvoženih je %d računov</item>
+    </plurals>
+</resources>

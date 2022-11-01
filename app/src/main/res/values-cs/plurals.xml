@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">Byl importován %d účet</item>
+        <item quantity="few">Byly importovány %d účty</item>
+        <item quantity="many">Bylo importováno %d účtu</item>
+        <item quantity="other">Bylo importováno %d účtů</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Byl exportován %d účet</item>
+        <item quantity="few">Byly exportovány %d účty</item>
+        <item quantity="many">Bylo exportováno %d účtu</item>
+        <item quantity="other">Bylo exportováno %d účtů</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Byl importován %d účet</item>
+        <item quantity="few">Byly importovány %d účty</item>
+        <item quantity="many">Bylo importováno %d účtu</item>
+        <item quantity="other">Bylo importováno %d účtů</item>
+    </plurals>
+</resources>

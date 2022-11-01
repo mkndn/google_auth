@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/audit_log_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/toolbar_height"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="12dp">
+        <TextView android:text="@string/audit_log_page_title" style="@style/MigrationTextHeadingStyle"/>
+        <TextView android:gravity="center" android:id="@+id/audit_log_overview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/audit_log_page_description" style="@style/MigrationTextBodyStyle"/>
+        <View android:layout_marginLeft="0dp" android:layout_marginRight="0dp" style="@style/SeparatorLineStyle"/>
+        <ListView android:id="@+id/audit_log_events_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <TextView android:gravity="center" android:id="@+id/no_recent_events_notice" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/audit_log_no_recent_events" android:layout_weight="1" style="@style/TextAppearance.GoogleMaterial.Body1"/>
+    </LinearLayout>
+</LinearLayout>

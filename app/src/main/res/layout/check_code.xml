@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/enter_key_toolbar" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/toolbar_height" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/enter_key_toolbar">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="24dp">
+            <TextView android:id="@+id/check_code" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/check_code" android:singleLine="false" style="?attr/accountListWithVerificationCodesRowAccountName"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/code_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_lock_googblue_24"/>
+                <TextView android:id="@+id/code_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" style="?attr/accountListWithVerificationCodesRowVerificationCode"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/counter_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_history_googblue_24"/>
+                <TextView android:textColor="@color/primaryTextColor" android:id="@+id/counter_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" style="?attr/accountListWithVerificationCodesRowVerificationCode"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:id="@+id/toolbar_shadow" android:background="@drawable/toolbar_shadow" android:layout_width="match_parent" android:layout_height="@dimen/toolbar_shadow_height" android:layout_below="@+id/enter_key_toolbar"/>
+</RelativeLayout>

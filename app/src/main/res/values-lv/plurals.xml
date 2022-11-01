@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="zero">%d konti importēti</item>
+        <item quantity="one">%d konts importēts</item>
+        <item quantity="other">%d konti importēti</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="zero">Tika eksportēti %d konti</item>
+        <item quantity="one">Tika eksportēts %d konts</item>
+        <item quantity="other">Tika eksportēti %d konti</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="zero">Tika importēti %d konti</item>
+        <item quantity="one">Tika importēts %d konts</item>
+        <item quantity="other">Tika importēti %d konti</item>
+    </plurals>
+</resources>

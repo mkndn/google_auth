@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d fiók importálva</item>
+        <item quantity="other">%d fiók importálva</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">%d fiók exportálása kész</item>
+        <item quantity="other">%d fiók exportálása kész</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">%d fiók importálása kész</item>
+        <item quantity="other">%d fiók importálása kész</item>
+    </plurals>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">%d cont a fost importat</item>
+        <item quantity="few">%d conturi au fost importate</item>
+        <item quantity="other">%d de conturi au fost importate</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">%d cont a fost exportat</item>
+        <item quantity="few">%d conturi au fost exportate</item>
+        <item quantity="other">%d de conturi au fost exportate</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">%d cont a fost importat</item>
+        <item quantity="few">%d conturi au fost importate</item>
+        <item quantity="other">%d de conturi au fost importate</item>
+    </plurals>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/timesync_sync_now_preference_title" android:key="sync_now">
+        <intent android:action="com.google.android.apps.authenticator.timesync.SYNC_NOW"/>
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/timesync_about_feature_preference_title" android:key="about">
+        <intent android:action="android.intent.action.VIEW" android:data="@string/timesync_about_feature_url"/>
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accounts_imported">
+        <item quantity="one">Importuota %d paskyra</item>
+        <item quantity="few">Importuotos %d paskyros</item>
+        <item quantity="many">Importuota %d paskyros</item>
+        <item quantity="other">Importuota %d paskyrų</item>
+    </plurals>
+    <plurals name="audit_log_accounts_exported">
+        <item quantity="one">Eksportuota %d paskyra</item>
+        <item quantity="few">Eksportuotos %d paskyros</item>
+        <item quantity="many">Eksportuota %d paskyros</item>
+        <item quantity="other">Eksportuota %d paskyrų</item>
+    </plurals>
+    <plurals name="audit_log_accounts_imported">
+        <item quantity="one">Importuota %d paskyra</item>
+        <item quantity="few">Importuotos %d paskyros</item>
+        <item quantity="many">Importuota %d paskyros</item>
+        <item quantity="other">Importuota %d paskyrų</item>
+    </plurals>
+</resources>

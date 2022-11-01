@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/migration_introduction_toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/toolbar_height"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="24dp" android:layout_marginRight="24dp">
+        <ImageView style="@style/MigrationHeadingIconStyle"/>
+        <TextView android:text="@string/migration_page_title" style="@style/MigrationTextHeadingStyle"/>
+        <TextView android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="24dp" android:text="@string/migration_page_introduction_description" android:lineSpacingExtra="4dp" style="@style/MigrationTextBodyStyle"/>
+        <View style="@style/SeparatorLineStyle"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="buttonExportClicked">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="32dp" android:layout_height="match_parent" android:layout_marginTop="12dp" android:layout_marginRight="24dp" android:layout_marginBottom="12dp" android:src="@drawable/export_icon_24dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/migration_page_introduction_export_heading" style="@style/MigrationTextSubHeadingStyle"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/migration_page_introduction_export_description"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/SeparatorLineStyle"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:onClick="buttonImportClicked">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="32dp" android:layout_height="match_parent" android:layout_marginTop="12dp" android:layout_marginRight="24dp" android:layout_marginBottom="12dp" android:src="@drawable/import_icon_24dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/migration_page_introduction_import_heading" style="@style/MigrationTextSubHeadingStyle"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/migration_page_introduction_import_description"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/SeparatorLineStyle"/>
+        <LinearLayout android:gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="18dp">
+            <Button android:layout_gravity="start|bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/audit_log_button" android:onClick="buttonAuditLogClicked" style="@style/Widget.GoogleMaterial.Button.TextButton"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
